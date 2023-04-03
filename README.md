@@ -1,20 +1,23 @@
-# Backend server for flutter google sign-in app
+## Backend server for flutter google sign-in app
+#### **with firebase authentication**
 
-## install deps
+## How to use
+
+### install deps
 ```sh
 yarn add
 #or 
 nmp i
 ```
 
-## start server
+### start server
 ```sh
 npm start
 # or
 nodemon start
 ```
 
-## used packages
+#### used packages
  * body-parser
  * dotenv
  * express

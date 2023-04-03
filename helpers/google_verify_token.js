@@ -18,7 +18,8 @@ const verifyGoogleIdToken = async (token) => {
         CLIENT_ID,
         ANDROID_ID,
         IOS_ID,
-      ],  // Specify the CLIENT_ID of the app that accesses the backend
+      ],  
+      // Specify the CLIENT_ID of the app that accesses the backend
       // Or, if multiple clients access the backend:
       //[CLIENT_ID_1, CLIENT_ID_2, CLIENT_ID_3]
     });
