@@ -6,7 +6,7 @@
 ### install deps
 ```sh
 yarn add
-#or 
+# or 
 nmp i
 ```
 

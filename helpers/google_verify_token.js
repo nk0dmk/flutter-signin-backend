@@ -24,7 +24,9 @@ const verifyGoogleIdToken = async (token) => {
       //[CLIENT_ID_1, CLIENT_ID_2, CLIENT_ID_3]
     });
     const payload = ticket.getPayload();
+    console.log('======== PAYLOAD ========');
     console.log(payload);
+    console.log('======== PAYLOAD ========');
 
     return {
       name: payload['name'],
