@@ -18,9 +18,10 @@ const googleAuthController = async (req, res = response) => {
 
   //? return if google user is null
   if (!googleUser) {
+    console.log(token);
     return res.status(400).json({
       ok: false,
-      msg: 'googleUser is issue',
+      msg: 'googleUser issue',
     });
   };
 

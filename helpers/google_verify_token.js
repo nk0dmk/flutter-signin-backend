@@ -12,7 +12,7 @@ const client = new OAuth2Client(CLIENT_ID);
 //?
 const verifyGoogleIdToken = async (token) => {
   try {
-    const ticket = client.verifyIdToken({
+    const ticket = await client.verifyIdToken({
       idToken: token,
       audience: [
         CLIENT_ID,
@@ -39,7 +39,7 @@ const verifyGoogleIdToken = async (token) => {
     // const domain = payload['hd'];
     // verifyGoogleIdToken().catch(console.error);
   } catch (error) {
-    console.log(error)
+    console.log(error);
     return null;
   }
 }
