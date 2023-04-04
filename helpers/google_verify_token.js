@@ -12,7 +12,7 @@ const client = new OAuth2Client(CLIENT_ID);
 //?
 const verifyGoogleIdToken = async (token) => {
   try {
-    const ticket = await client.verifyIdToken({
+    const ticket = client.verifyIdToken({
       idToken: token,
       audience: [
         CLIENT_ID,
@@ -24,6 +24,7 @@ const verifyGoogleIdToken = async (token) => {
       //[CLIENT_ID_1, CLIENT_ID_2, CLIENT_ID_3]
     });
     const payload = ticket.getPayload();
+    
     console.log('======== PAYLOAD ========');
     console.log(payload);
     console.log('======== PAYLOAD ========');
@@ -39,6 +40,7 @@ const verifyGoogleIdToken = async (token) => {
     // verifyGoogleIdToken().catch(console.error);
   } catch (error) {
     console.log(error)
+    return null;
   }
 }
 

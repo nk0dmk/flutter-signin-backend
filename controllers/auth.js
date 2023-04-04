@@ -19,7 +19,8 @@ const googleAuthController = async (req, res = response) => {
   //? return if google user is null
   if (!googleUser) {
     return res.status(400).json({
-      ok: false
+      ok: false,
+      msg: 'googleUser is issue',
     });
   };
 
