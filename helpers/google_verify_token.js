@@ -3,7 +3,7 @@ const { OAuth2Client } = require('google-auth-library');
 //? web app client id
 const CLIENT_ID = process.env.WEB_CLIENT_ID;
 
-const OTHER_CLIENT_ID = process.env.OTHER_CLIENT_ID;
+const OTHER_CLIENT_ID = process.env.OTHER_WEB_CLIENT_ID;
 //? android client id
 const ANDROID_ID = process.env.ANDROID_CLIENT_ID;
 //? ios client id
