@@ -9,7 +9,10 @@ yarn add
 # or 
 nmp i
 ```
-
+### copy **.env.example** to **.env**  and **fill** vars
+```sh
+cp .env-example .env
+```
 ### start server
 ```sh
 npm start
